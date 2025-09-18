@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+}
+header {
+  background-color: #0066cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+nav, main, aside {
+  padding: 15px;
+  border-radius: 4px;
+}
+nav {
+  background-color: #eee;
+  flex: 1;
+}
+main {
+  background-color: #fff0f5;
+  flex: 2;
+}
+aside {
+  background-color: #9933ff;
+  color: white;
+  flex: 1;
+}
+nav button {
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+nav button.active, nav button:hover {
+  background-color: #0066cc;
+  color: white;
+}

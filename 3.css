@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff8dc;
+}
+header {
+  background-color: #ff6600;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  padding: 20px;
+}
+nav {
+  float: left;
+  width: 20%;
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 4px;
+}
+main {
+  float: left;
+  width: 60%;
+  background-color: #ffffcc;
+  padding: 15px;
+  border-radius: 4px;
+}
+aside {
+  float: left;
+  width: 20%;
+  background-color: #339999;
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+}
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav button {
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+nav button.active, nav button:hover {
+  background-color: #ff6600;
+  color: white;
+}

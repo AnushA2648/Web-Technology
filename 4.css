@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fdf5ff;
+}
+header {
+  background-color: #800080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  display: block;
+  padding: 20px;
+}
+nav, main, aside {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 4px;
+}
+nav {
+  background-color: #eee;
+}
+main {
+  background-color: #e6e6fa;
+}
+aside {
+  background-color: #4444aa;
+  color: white;
+}
+nav button {
+  margin-bottom: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+nav button.active, nav button:hover {
+  background-color: #800080;
+  color: white;
+}

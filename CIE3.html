@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to My Homepage</title>
+  <link id="pagestyle" rel="stylesheet" href="1.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Homepage</h1>
+    <p>Use the menu to select different Stylesheets</p>
+  </header>
+
+  <div class="container">
+    <nav>
+      <button onclick="setTheme('1.css', this)" class="active">Stylesheet 1</button>
+      <button onclick="setTheme('2.css', this)">Stylesheet 2</button>
+      <button onclick="setTheme('3.css', this)">Stylesheet 3</button>
+      <button onclick="setTheme('4.css', this)">Stylesheet 4</button>
+      <button onclick="setTheme('', this)">No Stylesheet</button>
+    </nav>
+
+    <main>
+      <h2>Same Page Different Stylesheets</h2>
+      <p>This is a demonstration of how different stylesheets can change the layout of your HTML page.</p>
+      <h3>No Styles</h3>
+      <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet.</p>
+    </main>
+
+    <aside>
+      <h3>Side-Bar</h3>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </aside>
+  </div>
+
+  <script>
+    function setTheme(sheet, btn) {
+      document.getElementById('pagestyle').setAttribute('href', sheet);
+      const buttons = document.querySelectorAll('nav button');
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+  </script>
+</body>
+</html>
