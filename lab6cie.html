@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SMVITM Event Registration</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fce4ec);
+      margin: 0;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      padding: 30px 40px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #6a1b9a;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      text-align: center;
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+      margin-bottom: 20px;
+    }
+
+    .radio-group label,
+    .checkbox-group label {
+      display: inline-block;
+      margin-right: 15px;
+      font-weight: normal;
+    }
+
+    .buttons {
+      text-align: center;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      background-color: #6a1b9a;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 0 10px;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #4a148c;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SMVITM Event Registration</h1>
+    <p class="subtitle">Join us for an unforgettable experience!</p>
+    <form action="#" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="fullname" placeholder="Your name">
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com">
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. +91 9876543210">
+
+      <label for="event">Select Event:</label>
+      <select id="event" name="event">
+        <option value="techfest">Tech Fest</option>
+        <option value="cultural">Cultural Night</option>
+        <option value="sports">Sports Meet</option>
+        <option value="workshop">Workshop</option>
+      </select>
+
+      <label>Year of Study:</label>
+      <div class="radio-group">
+        <label><input type="radio" name="year" value="1st"> 1st Year</label>
+        <label><input type="radio" name="year" value="2nd"> 2nd Year</label>
+        <label><input type="radio" name="year" value="3rd"> 3rd Year</label>
+        <label><input type="radio" name="year" value="4th"> 4th Year</label>
+      </div>
+
+      <label>Interests:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="interests" value="coding"> Coding</label>
+        <label><input type="checkbox" name="interests" value="music"> Music</label>
+        <label><input type="checkbox" name="interests" value="dance"> Dance</label>
+        <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+      </div>
+
+      <label for="comments">Any Comments:</label>
+      <textarea id="comments" name="comments" placeholder="Let us know your thoughts..."></textarea>
+
+      <div class="buttons">
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+      </div>
+    </form>
+  </div>
+  <footer>
+    &copy; 2025 SMVITM College | Designed for event enthusiasts
+  </footer>
+</body>
+</html>
