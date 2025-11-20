@@ -1,0 +1,83 @@
+/* GLOBAL SETTINGS */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ebe9ff, #f7f7ff, #eae6ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* PAGE CONTAINER */
+.container {
+    width: 420px;
+    text-align: center;
+}
+
+/* HEADINGS */
+.heading {
+    font-size: 28px;
+    color: #5a45ff;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* GLASS FORM */
+.glass-form,
+.glass-output {
+    background: rgba(255,255,255,0.6);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    backdrop-filter: blur(10px);
+}
+
+/* FORM GROUPS */
+.form-group {
+    text-align: left;
+    margin-bottom: 18px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #5a45ff;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 12px;
+    background: #f3f0ff;
+    outline: none;
+    font-size: 15px;
+}
+
+/* BUTTON */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: #5a45ff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: 0.25s;
+}
+
+.submit-btn:hover {
+    background: #4232d9;
+    box-shadow: 0px 0px 15px #8b7aff;
+}
+
+/* OUTPUT PAGE STYLE */
+.glass-output p {
+    text-align: left;
+    margin: 12px 0;
+    font-size: 16px;
+}

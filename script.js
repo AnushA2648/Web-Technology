@@ -1,7 +1,9 @@
-// Smooth link hover effect
-document.querySelectorAll("nav a").forEach(link => {
-    link.addEventListener("mouseover", () => link.style.opacity = "1");
-    link.addEventListener("mouseout", () => {
-        if (!link.classList.contains("active")) link.style.opacity = "0.8";
+// Simple fade animation for inputs
+document.querySelectorAll("input, textarea, select").forEach(field => {
+    field.addEventListener("focus", () => {
+        field.style.background = "#ece8ff";
+    });
+    field.addEventListener("blur", () => {
+        field.style.background = "#f3f0ff";
     });
 });
