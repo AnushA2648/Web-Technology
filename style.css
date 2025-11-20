@@ -1,0 +1,154 @@
+/* GLOBAL STYLE */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f7f7ff, #e9e6ff);
+    color: #2d2d2d;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 60px;
+    background: #ffffffcc;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    position: sticky;
+    top: 0;
+}
+
+.brand {
+    font-size: 26px;
+    font-weight: 700;
+}
+.brand span {
+    color: #5a45ff;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    color: #5d5d5d;
+    transition: 0.3s;
+}
+
+nav .active,
+nav a:hover {
+    color: #5a45ff;
+    font-weight: 600;
+}
+
+/* HERO SECTION */
+.hero-section {
+    padding: 120px 60px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.accent {
+    color: #5a45ff;
+}
+
+.subtitle {
+    font-size: 20px;
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.primary-btn {
+    padding: 14px 28px;
+    background: #5a45ff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background: #462dd9;
+    box-shadow: 0 0 15px #7c6afe;
+}
+
+/* CONTENT AREA */
+.content-area {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.section-title {
+    text-align: center;
+    color: #5a45ff;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+/* GLASS CARD */
+.glass-card {
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.glass-card h3 {
+    color: #5a45ff;
+}
+
+/* SKILLS TAGS */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background: #5a45ff;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* BIO DATA GRID */
+.biodata-block .bio-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e4e4ff;
+}
+
+.label {
+    font-weight: 600;
+    color: #5a45ff;
+}
+.value {
+    opacity: 0.85;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    animation: fade 1s ease;
+}
+.fade-in-delay {
+    animation: fade 1.6s ease;
+}
+.fade-in-delay2 {
+    animation: fade 2.2s ease;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
